@@ -1,12 +1,11 @@
-let nomeCanal = 'backtotriangle';
+let nomeCanal = 'DevMedia';
 let upload_id;
-let a = [1,2,3,4,5,6];
 
 $(document).ready(function(){
     $.get("https://www.googleapis.com/youtube/v3/channels", {
         part: 'contentDetails',
         forUsername: nomeCanal,
-        key: 'AIzaSyB1QckaJyK9aAf2NoYc4Mo8idwm4YgcH4A'},
+        key: 'AIzaSyAaRU8BYKKLUfIt8EQy4NgrcYv9a5Qc4OM'},
         function(e) {
             console.log(e);            
             upload_id = e.items[0].contentDetails.relatedPlaylists.uploads;         
